@@ -30,7 +30,7 @@ for _ in range(T):
                 for k in range(5):
                     next_row = row + delta_row * k
                     next_col = col + delta_col * k
-                    if (not inside(next_row, next_col)) or board[next_row][next_col] != color:
+                    if (inside(next_row, next_col)) or board[next_row][next_col] != color:
                         ok = False
                         break
 
